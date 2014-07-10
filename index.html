@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+
+  <script src="bower_components/tinycolor/tinycolor.js"></script>
+  <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
+
+  <style>
+    .well{
+      border: 30px solid black;
+    }
+  </style>
+</head>
+<body ng-app="demo" class="container">
+
+<div class="well" ng-controller="OuterCtrl as outer">
+<h2>Outer {{"message" | happy}}</h2>
+
+  <div class="well" ng-controller="MiddleCtrl as middle">
+  <h2>Middle</h2>
+
+    <div class="well" ng-controller="InnerCtrl as inner">
+    <h2>Inner</h2>
+
+      <digest-button></digest-button>
+      <apply-button></apply-button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+</body>
+</html>

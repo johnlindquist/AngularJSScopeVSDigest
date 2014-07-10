@@ -1,0 +1,24 @@
+{
+  "name": "AngularJSScopeVSDigest",
+  "version": "0.0.0",
+  "homepage": "https://github.com/johnlindquist/AngularJSScopeVSDigest",
+  "authors": [
+    "John Lindquist <johnlindquist@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "~0.2.10",
+    "angular-bootstrap": "~0.11.0",
+    "bootstrap": "~3.2.0",
+    "gsap": "~1.12.1",
+    "tinycolor": "~1.0.0"
+  }
+}
